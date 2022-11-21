@@ -92,7 +92,7 @@ class WafwcDataComponents
 	public ?string $format;
 	public string $text;
 
-	public function __construct(string $type, ?string $format, string $text)
+	public function __construct(string $type, ?string $format, ?string $text)
 	{
 		$this->type = $type;
 		$this->format = $format;
@@ -104,7 +104,7 @@ class WafwcDataComponents
 		return new self(
 			$data->type,
 			$data->format ?? null,
-			$data->text
+			$data->text ?? '',
 		);
 	}
 }

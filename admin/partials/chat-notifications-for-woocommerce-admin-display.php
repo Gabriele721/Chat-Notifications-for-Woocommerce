@@ -233,7 +233,7 @@ Facebook will automatically create a business account later.', 'wafwc' );
 			</p>
 
 			<p>
-				<?php_e( 'Now you can Copy and paste your <b>Token</b>, <b>WhatsApp Business ID</b> and the <b>WhatsApp Phone
+				<?php _e( 'Now you can Copy and paste your <b>Token</b>, <b>WhatsApp Business ID</b> and the <b>WhatsApp Phone
 					ID</b> into Chat notification for Woocommerce Settings fileds', 'wafwc' );?>
 			</p>
 

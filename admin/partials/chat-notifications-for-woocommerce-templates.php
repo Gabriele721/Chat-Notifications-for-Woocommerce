@@ -55,7 +55,7 @@
 			</p>
 			<p>
 				<?php
-				_e( '<b>wafwc</b> will allow you to associate any <b>variable</b> you have created (if any) in the body of the WhatsApp template to a <b>Woocommerce order field</b> of your choice.', 'wafwc' );
+				_e( '<b>Chat Notifications for Woocommerce</b> will allow you to associate any <b>variable</b> you have created (if any) in the body of the WhatsApp template to a <b>Woocommerce order field</b> of your choice.', 'wafwc' );
 				?>
 			</p>
 			<p>
@@ -68,6 +68,16 @@
 
 	<?php
 	$response = WafwcTemplateMessageList::getWaTemplateList();
+	
+	// Handling errors
+	$response = WafwcTemplateMessageList::getWaTemplateList();
+	if(is_wp_error( $response )) {
+		echo '<div class="wafwc-container">';
+		echo '<p><b>'. $response->get_error_message() . '</b></p>';
+		echo '</div></div>';
+		return;
+	
+	}
 
 	if ( ! is_wp_error( $response ) && ( $response['response']['code'] == 200 ) ) {
 		$templateListInstance = WafwcTemplateMessageList::fromJson( json_decode( $response['body'] ) );

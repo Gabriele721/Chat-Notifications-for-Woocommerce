@@ -14,11 +14,9 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Chat notifications for Woocommerce
- * Plugin URI:        https://www.algaweb.it
- * Description:       
-Chat notifications for Woocommerce, allows users to automatically send WhatsApp custom templates to your customers
-when an Order status is updated.
- * Version:           1.0.0
+ * Plugin URI:        https://github.com/Gabriele721/Chat-Notifications-for-Woocommerce
+ * Description:       Chat notifications for Woocommerce, allows users to automatically send WhatsApp custom templates to your customers when an Order status is updated.
+ * Version:           1.0.4
  * Author:            algaweb
  * Author URI:        https://www.algaweb.it
  * License:           GPL-2.0+

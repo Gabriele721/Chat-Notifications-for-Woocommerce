@@ -210,7 +210,6 @@ class Chat_Notifications_For_Woocommerce_Admin {
 								'Content-Type'  => 'application/json'
 							),
 						) );
-
 					}
 				}
 
